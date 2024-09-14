@@ -1,3 +1,11 @@
+# POC Project
+
+Example how we can read data from 2 or more SQL tables merge it and fill into 1 Java object.
+- Java dto class ```UserData```
+- We merged data from 2 SQL tables ```User``` and ```Contacts``` into mentioned DTO
+- Repository class ```UserDataRepositoryImpl```
+- For review merged data created REST API call consumer ```TestRest```
+
 ## Used Docker container original page on Docker hub
 https://hub.docker.com/r/ibmcom/db2
 
