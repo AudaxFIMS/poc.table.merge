@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="3" author="asemeshin" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert schemaName="data" tableName="user">
+            <column name="id" value="1"/>
+            <column name="name" value="Usr 1"/>
+        </insert>
+        <insert schemaName="data" tableName="user">
+            <column name="id" value="2"/>
+            <column name="name" value="Usr 2"/>
+        </insert>
+        <insert schemaName="data" tableName="user">
+            <column name="id" value="3"/>
+            <column name="name" value="Usr 3"/>
+        </insert>
+        <insert schemaName="data" tableName="user">
+            <column name="id" value="4"/>
+            <column name="name" value="Usr 4"/>
+        </insert>
+        <insert schemaName="data" tableName="user">
+            <column name="id" value="5"/>
+            <column name="name" value="Usr 5"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="2" author="asemeshin" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <insert schemaName="data" tableName="contacts">
+            <column name="id" value="1"/>
+            <column name="phone" value="(111) 111-1111"/>
+            <column name="email" value="test1@test.com"/>
+            <column name="address" value="Some strange address for 1"/>
+        </insert>
+        <insert schemaName="data" tableName="contacts">
+            <column name="id" value="2"/>
+            <column name="phone" value="(222) 222-1111"/>
+            <column name="email" value="test2@test.com"/>
+            <column name="address" value="Some strange address for 2"/>
+        </insert>
+        <insert schemaName="data" tableName="contacts">
+            <column name="id" value="3"/>
+            <column name="address" value="Some strange address for 3"/>
+        </insert>
+        <insert schemaName="data" tableName="contacts">
+            <column name="id" value="4"/>
+            <column name="phone" value="(444) 444-1111"/>
+        </insert>
+        <insert schemaName="data" tableName="contacts">
+            <column name="id" value="5"/>
+            <column name="email" value="test5@test.com"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

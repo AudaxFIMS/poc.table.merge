@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: poc.table.merge
+  # ===============================
+  # = DATA SOURCE
+  # ===============================
+  # Set here configurations for the database connection
+  datasource:
+    url: jdbc:db2://localhost:50000/db2test
+    username: db2inst1
+    password: db2admin
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    # Keep the connection alive if idle for a long time (needed in production)
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  # ===============================
+  # = JPA / HIBERNATE
+  # ===============================
+  # Show or not log for each sql query
+  jpa:
+    show-sql: true
+    # Hibernate ddl auto (create, create-drop, update): with "create-drop" the database
+    # schema will be automatically created afresh for every start of application
+    hibernate:
+      ddl-auto: create-drop
+  # ===============================
+  # = LIQUIBASE
+  # ===============================
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    enabled: true
